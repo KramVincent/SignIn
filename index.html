@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #213257;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #3459b5, #1dcfbd, #29cf7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #ef3515;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .link {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .link a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign In</h2>
+        <form action="signIn.html">
+            <label for="name">Name:</label>
+            <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Enter your name" 
+                required>
+            
+            <label for="username">Username:</label>
+            <input 
+                type="text" 
+                id="username" 
+                name="username" 
+                placeholder="Enter your username" 
+                required>
+            
+            <label for="email">Email:</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Enter your email" 
+                required>
+            
+            <label for="password">Password:</label>
+            <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="Enter your password" 
+                required>
+            
+            <label for="confirm-password">Confirm Password:</label>
+            <input 
+                type="password" 
+                id="confirm-password" 
+                name="confirm-password" 
+                placeholder="Confirm your password" 
+                required>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

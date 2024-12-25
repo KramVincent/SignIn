@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #213257;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #3459b5, #1dcfbd, #29cf7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #555555;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #ef3515;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <form>
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username" name="new-username" placeholder="Enter your username" required>
+            
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" name="new-password" placeholder="Enter your password" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
